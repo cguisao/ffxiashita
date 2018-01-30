@@ -1,0 +1,253 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statuspdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<head>Walahra Turban</head>
+			<neck>Peacock Amulet</neck>
+			<lear>Pixie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Rapparee Harness</body>
+			<hands>Assassin's Armlets</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Sniper's Ring +1</rring>
+			<back>Boxer's Mantle</back>
+			<waist>Velocious Belt</waist>
+			<legs>Homam Cosciales</legs>
+			<feet>Trotter boots</feet>
+		</set>
+		<set name="sneak">
+			<head>Hecatomb Cap +1</head>
+			<neck>Justice Torque</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Pixie Earring</rear>
+			<body>Hct. Harness +1</body>
+			<hands>Hct. Mittens +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Adroit Ring</rring>
+			<back>Assassin's Cape</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Hct. Subligar +1</legs>
+			<feet>Hct. Leggings +1</feet>
+		</set>
+		<set name="trick">
+			<head>Hecatomb Cap +1</head>
+			<neck>Justice Torque</neck>
+			<lear>Drone Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Hct. Harness +1</body>
+			<hands>Hct. Mittens +1</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Breeze Ring</rring>
+			<back>Assassin's Cape</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Hct. Subligar +1</legs>
+			<feet>Hct. Leggings +1</feet>
+		</set>
+		<set name="sneakth">
+			<head>Hecatomb Cap +1</head>
+			<neck>Justice Torque</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Pixie Earring</rear>
+			<body>Hct. Harness +1</body>
+			<hands>Assassin's Armlets</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Adroit Ring</rring>
+			<back>Assassin's Cape</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Hct. Subligar +1</legs>
+			<feet>Hct. Leggings +1</feet>
+		</set>
+		<set name="trickth">
+			<head>Hecatomb Cap +1</head>
+			<neck>Justice Torque</neck>
+			<lear>Drone Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Hct. Harness +1</body>
+			<hands>Assassin's Armlets</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Breeze Ring</rring>
+			<back>Assassin's Cape</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Hct. Subligar +1</legs>
+			<feet>Hct. Leggings +1</feet>
+		</set>
+		<set name="evasion">
+			<head>Optical Hat</head>
+			<neck>Peacock Amulet</neck>
+			<lear>Drone Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Scp. Harness +1</body>
+			<hands>Dragon Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Breeze Ring</rring>
+			<back>Boxer's Mantle</back>
+			<waist>Scouter's Robe</waist>
+			<legs>War Brais</legs>
+			<feet>Enkidu's Leggings</feet>
+		</set>
+		<set name="kite">
+			<head>Optical Hat</head>
+			<neck>Peacock Amulet</neck>
+			<lear>Drone Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Scp. Harness +1</body>
+			<hands>Dragon Mittens</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Breeze Ring</rring>
+			<back>Boxer's Mantle</back>
+			<waist>Scouter's Robe</waist>
+			<legs>War Brais</legs>
+			<feet>Trotter boots</feet>
+		</set>
+		<set name="haste">
+			<head>Walahra Turban</head>
+			<neck>Peacock Amulet</neck>
+			<lear>Pixie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Rapparee Harness</body>
+			<hands>Homam Manopolas</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Sniper's Ring +1</rring>
+			<back>Boxer's Mantle</back>
+			<waist>Velocious Belt</waist>
+			<legs>Homam Cosciales</legs>
+			<feet>Homam Gambieras</feet>
+		</set>
+		<set name="hasteth">
+			<head>Walahra Turban</head>
+			<neck>Peacock Amulet</neck>
+			<lear>Pixie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Rapparee Harness</body>
+			<hands>Assassin's Armlets</hands>
+			<lring>Rajas Ring</lring>
+			<rring>Sniper's Ring +1</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Velocious Belt</waist>
+			<legs>Homam Cosciales</legs>
+			<feet>Homam Gambieras</feet>
+		</set>
+		<set name="THTP" baseset="Haste">
+			<hands>Asn. Armlets +1</hands>
+		</set>
+	</sets>
+	
+	<variables>
+		<var name="init">0</var><!--dont touch-->	
+		<var name="THTPSetActive">0</var>
+		<var name="TPSetActive">0</var>
+		<var name="EvaSetActive">0</var>
+		<var name="EvaSetActiveRun">0</var>
+	</variables>
+	
+	<inputcommands>
+		<cmd input="/th">
+			<if advanced="$THTPSetActive=0">
+				<setvar name="THTPSetActive" value="1" />
+				<setvar name="TPSetActive" value="0" />
+				<setvar name="EvaSetActive" value="0" />
+				<setvar name="EvaSetActiveRun" value="0" />
+				<addtochat color="57">Treasure Hunter TP set enabled!</addtochat>
+			</if>
+		</cmd>
+		<cmd input="/tp">
+			<if advanced="$TPSetActive=0">
+				<setvar name="THTPSetActive" value="0" />
+				<setvar name="TPSetActive" value="1" />
+				<setvar name="EvaSetActiveRun" value="0" />
+				<addtochat color="57">TP set enable!</addtochat>
+			</if>
+		</cmd>
+		<cmd input="/eva">
+			<if advanced="$TPSetActive=0">
+				<setvar name="THTPSetActive" value="0" />
+				<setvar name="TPSetActive" value="0" />
+				<setvar name="EvaSetActive" value="1" />
+				<setvar name="EvaSetActiveRun" value="0" />
+				<addtochat color="57">Evasion set Enable!</addtochat>
+			</if>
+		</cmd>
+		<cmd input="/solo">
+			<if advanced="$TPSetActive=0">
+				<setvar name="THTPSetActive" value="0" />
+				<setvar name="TPSetActive" value="0" />
+				<setvar name="EvaSetActive" value="0" />
+				<setvar name="EvaSetActiveRun" value="1" />
+				<addtochat color="57">Evasion set Enable!</addtochat>
+			</if>
+		</cmd>
+	</inputcommands>
+	
+	<premagic>
+		<if ad_skill="Ninjutsu">
+			<equip><rear>Loquac. Earring</rear></equip>
+		</if>
+	</premagic>
+	
+	<idlegear>
+		<if buffactive="Sneak Attack">
+			<if advanced="$THTPSetActive=1">
+				<equip set="sneakth"/>
+			</if>
+			<else>
+				<equip set="sneak"/>
+			</else>
+		</if>
+		<elseif buffactive="Trick Attack">
+			<if advanced="$THTPSetActive=1">
+				<equip set="trickth"/>
+			</if>
+			<else>
+				<equip set="trick"/>
+			</else>
+		</elseif>
+		<elseif p_status="engaged">
+			<if advanced="$THTPSetActive=1">
+				<equip set="hasteth"/>
+			</if>
+			<elseif advanced="$EvaSetActive=1">
+				<equip set="evasion"/>
+			</elseif>
+			<else>
+				<equip set="haste"/>
+			</else>
+		</elseif>
+		<elseif advanced="$EvaSetActiveRun=1">
+			<equip set="kite"/>
+		</elseif>
+		<else>
+			<equip set="Stand" />
+		</else>
+		<if advanced="$init=0">
+			<setvar name="init" value="1" />
+			<command>/exec macrobook3.txt</command>
+		</if>
+	</idlegear>	
+	<midmagic>
+		<if ad_name="Utsusemi*">
+			<equip set="Evasion" />
+			<if ad_name="*Ni">
+				<equip set="Haste" />
+			</if>
+		</if>
+	</midmagic>
+	<weaponskill>
+		<if ad_name="Exenterator">
+			<equip set="trick"/>
+		</if>
+		<if ad_name="Mercy Stroke">
+			<if advanced="$THTPSetActive=1">
+				<equip set="sneakth"/>
+			</if>
+			<else>
+				<equip set="sneak"/>
+			</else>
+		</if>
+	</weaponskill>
+</ashitacast>

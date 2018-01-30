@@ -1,0 +1,156 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statuspdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<head>Optical Hat</head>
+			<range>Yoichinoyumi</range>
+			<ammo>Kabura Arrow</ammo>
+			<neck>Peacock Amulet</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Kyudogi +1</body>
+			<hands>Crimson Fng. Gnt.</hands>
+			<lring>Behemoth Ring</lring>
+			<rring>Behemoth Ring</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Scout's Belt</waist>
+			<legs>Sct. Braccae +1</legs>
+			<feet>Sct. Socks +1</feet>
+		</set>
+		<set name="run"> 
+			<head>Optical Hat</head>
+			<range>Yoichinoyumi</range>
+			<ammo>Kabura Arrow</ammo>
+			<neck>Peacock Amulet</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Kyudogi +1</body>
+			<hands>Crimson Fng. Gnt.</hands>
+			<lring>Behemoth Ring</lring>
+			<rring>Behemoth Ring</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Scout's Belt</waist>
+			<legs>Blood Cuisses</legs>
+			<feet>Trotter Boots</feet>
+		</set>
+		<set name="tp"> 
+			<head>Optical Hat</head>
+			<range>Yoichinoyumi</range>
+			<ammo>Demon Arrow</ammo>
+			<neck>Peacock Amulet</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Brutal Earring</rear>
+			<body>Kyudogi +1</body>
+			<hands>Crimson Fng. Gnt.</hands>
+			<lring>Behemoth Ring</lring>
+			<rring>Behemoth Ring</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Scout's Belt</waist>
+			<legs>Sct. Braccae +1</legs>
+			<feet>Sct. Socks +1</feet>
+		</set>
+		<set name="namas">
+			<range>Yoichinoyumi</range>
+			<ammo>Kabura Arrow</ammo>
+			<head>Enkidu's Cap</head>
+			<neck>Justice Torque</neck>
+			<lear>Cassie Earring</lear>
+			<rear>Drone Earring</rear>
+			<body>Kirin's Osode</body>
+			<hands>Seiryu's Kote</hands>
+			<lring>Behemoth Ring</lring>
+			<rring>Behemoth Ring</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Scout's Belt</waist>
+			<legs>Sct. Braccae +1</legs>
+			<feet>Hachiryu Sune-ate</feet>
+		</set>
+		<set name="Jish">
+			<range>Yoichinoyumi</range>
+			<ammo>Kabura Arrow</ammo>
+			<head>Enkidu's Cap</head>
+			<neck>Justice Torque</neck>
+			<lear>Pixie Earring</lear>
+			<rear>Fowling Earring</rear>
+			<body>Kirin's Osode</body>
+			<hands>Hachiryu Kote</hands>
+			<lring>Behemoth Ring</lring>
+			<rring>Behemoth Ring</rring>
+			<back>Amemet Mantle +1</back>
+			<waist>Warwolf Belt</waist>
+			<legs>Sct. Braccae +1</legs>
+			<feet>Hachiryu Sune-ate</feet>
+		</set>
+	</sets>
+
+	<variables>
+		<var name="init">0</var><!--dont touch-->	
+		<var name="WalkAway">1</var>
+		<var name="RunAway">0</var>
+	</variables>
+	
+	<inputcommands>
+		<cmd input="/run">
+			<if advanced="$RunAway=0" >
+				<setvar name="WalkAway" value="0" />
+				<setvar name="RunAway" value="1" />
+				<addtochat color="57">Run Motherfucker!!!</addtochat>
+			</if>
+		</cmd>
+		<cmd input="/walk">
+			<if advanced="$WalkAway=0">
+				<setvar name="WalkAway" value="1" />
+				<setvar name="RunAway" value="0" />
+				<addtochat color="57">Walk it off =D</addtochat>
+			</if>
+		</cmd>
+	</inputcommands>
+	
+	<jobability>
+		<if ad_name="Sharpshot">
+			<equip><legs>Hunter's Braccae</legs></equip>
+		</if>
+		<elseif ad_name="Scavenge">
+			<equip><feet>Hunter's Socks</feet></equip>
+		</elseif>
+		<elseif ad_name="Rapid Shat">
+			<equip><feet>Hunter's Beret</feet></equip>
+		</elseif>
+	</jobability>
+	<premagic>
+		<if ad_skill="Ninjutsu">
+			<equip><rear>Loquac. Earring</rear></equip>
+		</if>
+	</premagic>
+	
+	<idlegear> 
+		<if p_status="engaged">
+			<equip set="tp"/>
+		</if>
+		<elseif advanced="$RunAway=1">
+			<equip set="run"/>
+		</elseif>
+		<else>
+			<equip set="Stand" />
+		</else>
+		<if advanced="$init=0">
+			<setvar name="init" value="1" />
+			<command>/exec macrobook6.txt</command>
+		</if>
+	</idlegear>	
+	
+	<weaponskill>
+		<if ad_name="Jishnu's Radiance">
+			<equip set="Jish"/>
+		</if>
+		<elseif ad_name="Namas Arrow">
+			<equip set="Namas"/>
+		</elseif>
+	</weaponskill>
+</ashitacast>

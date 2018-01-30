@@ -1,0 +1,193 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<main>Claustrum</main>
+			<sub>Magic Strap</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Src. Petasos +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Genie Weskit</body>
+			<hands>Zenith Mitts</hands>
+			<lring>Snow Ring</lring>
+			<rring>Sorcerer's Ring</rring>
+			<back>Hecate's Cape</back>
+			<waist>Witch Sash</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Src. Sabots +1</feet>
+		</set>
+		<set name="Resting">
+			<main>Claustrum</main>
+			<sub>Magic Strap</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Hydra Beret</head>
+			<neck>Grandiose Chain</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Oracle's Robe</body>
+			<hands>Oracle's Gloves</hands>
+			<lring>Ether Ring</lring>
+			<rring>Serket Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Hierarch belt</waist>
+			<legs>Oracle's Braconi</legs>
+			<feet>Numerist Pumps</feet>
+		</set>
+		<set name="nuke">
+			<main>Claustrum</main>
+			<sub>Magic Strap</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Demon Helm +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Genie Weskit</body>
+			<hands>Zenith Mittss</hands>
+			<lring>Snow Ring</lring>
+			<rring>Sorcerer's Ring</rring>
+			<back>Hecate's Cape</back>
+			<waist>Witch Sash</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Src. Sabots +1</feet>
+		</set>
+		<set name="Enfeeb-ACC">
+			<main>Chatoyant Staff</main>
+			<sub>Magic Strap</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Igqira Tiara</head>
+			<neck>Spider Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Wizard's Coat</body>
+			<hands>Oracle's Gloves</hands>
+			<lring>Snow Ring</lring>
+			<rring>Snow Ring</rring>
+			<back>Ixion Cape</back>
+			<waist>Witch Sash</waist>
+			<legs>Igqira Lappas</legs>
+			<feet>Avocat Pigaches</feet>
+		</set>
+		<set name="Enfeeb-MND" baseset="Enfeeb-ACC">
+		</set>
+		<set name="Dark">
+			<main>Claustrum</main>
+			<sub>Dark Grip</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Nashira Turban</head>
+			<neck>Dark Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Nashira Manteel</body>
+			<hands>Sorcerer's Gloves</hands>
+			<lring>Snow Ring</lring>
+			<rring>Snow Ring</rring>
+			<back>Ixion Cape</back>
+			<waist>Witch Sash</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Rostrum Pumps</feet>
+		</set>
+		<set name="Stoneskin">
+			<main>Kirin's Pole</main>
+			<sub>Magic Strap</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petasos +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Errant Hpl.</body>
+			<hands>Bricta's cuffs</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Ixion Cape</back>
+			<waist>Witch Sash</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Errant pigaches</feet>
+		</set>
+		<set name="Precast">
+			<main>Claustrum</main>
+			<sub>Earth Grip</sub> 
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Sorcerer's Petasos +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<body>Dalmatica</body>
+			<hands>Zenith Mitts</hands>
+			<lring>Ether Ring</lring>
+			<rring>Serket Ring</rring>
+			<waist>Penitent's Rope</waist>
+			<legs>Zenith Slacks</legs>
+			<feet>Sorcerer's Sabots +1</feet>
+		</set>
+	</sets>
+	
+	<variables>
+		<var name="init">0</var><!--dont touch-->	
+	</variables>
+
+	<jobability>
+		<if ad_name="Chainspell"><equip></equip></if>
+		<if ad_name="Composure"><registerbuff id="419" /></if>
+	</jobability>
+	
+	<idlegear>
+		<if p_status="resting">
+			<equip set="Resting" /></if>
+		<else>
+			<equip set="Stand" /></else>
+		<if advanced="$init=0">
+			<setvar name="init" value="1" />
+			<command>/exec macrobook2.txt</command>
+		</if>
+	</idlegear>
+
+	<premagic>
+		<if ad_name="Fire*|Blizzard*|Aero*|Stone*|Thunder*|Water*|Freeze*|Burst*|thundaga*|stonega*|blizzaga*|firaga*|">
+			<equip set="Precast" />
+		</if>
+	</premagic>
+
+	<midmagic>		
+		<if ad_name="Stoneskin">
+			<equip set="Stoneskin" />
+		</if>
+		<elseif ad_name="Cure*|Curaga*">
+			<equip set="Cure" />
+		</elseif>
+		<elseif ad_skill="DarkMagic"><equip set="Dark" />
+			<if advanced="%ad_element=%e_dayelement">
+				<equip><legs>Sorcerer's Tonban</legs></equip>
+			</if>
+		</elseif>
+		<elseif ad_skill="ElementalMagic">
+			<if ad_name="Burn|Choke|Shock|Rasp|Drown|Choke|aspir|drain|bio*"><equip set="EleDot" /></if>
+			<elseif ad_name="Fire*|Blizzard*|Aero*|Stone*|Thunder*|Water*|Freeze*|Burst*|thundaga*|stonega*|blizzaga*|firaga*|">
+				<equip set="Nuke" />
+			</elseif>
+			<if advanced="%ad_element=%e_dayelement">
+				<equip><legs>Sorcerer's Tonban</legs></equip>
+			</if>
+		</elseif>
+		<elseif ad_skill="EnfeeblingMagic">
+			<if ad_name="Slow*|Paralyze*|Blind*|Poison*|Gravity|Sleep*|Silence|Bind|stun|sleepga">
+				<equip set="Enfeeb-MND" />
+			</if>
+		</elseif>
+		<elseif ad_skill="EnhancingMagic">
+			<if ad_name="Embrava|En*|Bar*|Phalanx"><equip set="Enhancing" /></if>
+			<else><equip set="Haste" /></else>
+		</elseif>
+	</midmagic>
+	<inputcommands>
+		<cmd input='/dyna'>
+			<equip><body>Oracle's Robe</body><hands>Wizard's Gloves</hands></equip>
+		</cmd>
+	</inputcommands>
+</ashitacast>

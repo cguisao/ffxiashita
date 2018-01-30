@@ -1,0 +1,84 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statuspdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<main>Apollo's Staff</main>
+			<sub>Light Grip</sub>
+			<head>Walahra Turban</head>
+			<neck>Wind Torque</neck>
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<body>Errant Hpl.</body>
+			<hands>Sha'ir Gages</hands>
+			<lring>Light Ring</lring>
+			<rring>Light Ring</rring>
+			<back>Blue Cape</back>
+			<waist>Velocious Belt</waist>
+			<legs>Sha'ir Seraweels</legs>
+			<feet>Oracle's Pigaches</feet>
+		</set>
+		<set name="tp">
+			<main>Apollo's Staff</main>
+			<sub>Light Grip</sub>
+			<head>Walahra Turban</head>
+			<neck>Wind Torque</neck>
+			<lear>Silver Earring</lear>
+			<rear>Silver Earring</rear>
+			<body>Errant Hpl.</body>
+			<hands>Sha'ir Gages</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Blue Cape</back>
+			<waist>Velocious Belt</waist>
+			<legs>Sha'ir Seraweels</legs>
+			<feet>Oracle's Pigaches</feet>
+		</set>
+	</sets>
+	
+	<variables>
+		<var name="init">0</var><!--dont touch-->	
+	</variables>
+	
+	<premagic>
+		<if ad_skill="Ninjutsu">
+			<equip><rear>Loquac. Earring</rear></equip>
+		</if>
+	</premagic>
+	
+	<jobability>
+	</jobability>
+	
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="tp"/>
+		</if>
+		<elseif advanced="$EvaSetActiveRun=1">
+			<equip set="kite"/>
+		</elseif>
+		<else>
+			<equip set="Stand" />
+		</else>
+		<if advanced="$init=0">
+			<setvar name="init" value="1" />
+			<command>/exec macrobook1.txt</command>
+		</if>
+	</idlegear>	
+	<midmagic>
+		<if ad_name="*Etude">
+			<equip><range>Rose Harp +1</range></equip>
+		</if>
+		<if ad_name="*Madrigal">
+			<equip><range>Traversiere +1</range></equip>
+		</if>
+		<if ad_name="*Elegy">
+			<equip><range>Traversiere +1</range></equip>
+			<equip><sub>Earth Grip</sub></equip>
+		</if>
+	</midmagic>
+</ashitacast>

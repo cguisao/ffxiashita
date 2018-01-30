@@ -1,0 +1,219 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statuspdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>true</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	
+	<sets>
+		<set name="Stand"> <!--Gear when doing nothing-->
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Dls. Chapeau +1</head>
+			<neck>Fylgja Torque +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Dalmatica</body>
+			<hands>Duelist's gloves</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Blood Cuisses</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+		<set name="Kite"> <!--Gear when doing nothing-->
+			<main>Terra's Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Dls. Chapeau +1</head>
+			<neck>Fylgja Torque +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Crm. Scale Mail</body>
+			<hands>Duelist's gloves</hands>
+			<lring>Krousis Ring +1</lring>
+			<rring>Krousis Ring +1</rring>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Blood Cuisses</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+		<set name="Resting">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor leather strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Hydra Beret</head>
+			<neck>Grandiose Chain</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Errant hpl.</body>
+			<hands>Duelist's gloves</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Duelist's Belt</waist>
+			<legs>Baron's Slops</legs>
+			<feet>Numerist Pumps</feet>
+		</set>
+		<set name="Nuke">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Wlk. Chapeau +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Crm. Scale Mail</body>
+			<hands>Zenith Mitts</hands>
+			<lring>Snow Ring</lring>
+			<rring>Snow Ring</rring>
+			<back>Hecate's Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+		<set name="Enfeeb-ACC">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Dls. Chapeau +1</head>
+			<neck>Spider Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Wlk. Tabard +1</body>
+			<hands>Bricta's cuffs</hands>
+			<lring>Snow Ring</lring>
+			<rring>Snow Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Avocat Pigaches</feet>
+		</set>
+		<set name="Enfeeb-MND" baseset="Enfeeb-ACC">
+		</set>
+		<set name="Dark">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Dls. Chapeau +1</head>
+			<neck>Dark Torque</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Moldavite Earring</rear>
+			<body>Crm. Scale Mail</body>
+			<hands>Bricta's cuffs</hands>
+			<lring>Snow Ring</lring>
+			<rring>Snow Ring</rring>
+			<back>Hecate's Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+		<set name="Stoneskin">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Wlk. Tathlum</ammo>
+			<head>Dls. Chapeau +1</head>
+			<neck>Lmg. Medallion +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Crm. Scale Mail</body>
+			<hands>Zenith Mitts</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Hecate's Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Errant pigaches</feet>
+		</set>
+		<set name="Cure">
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Wlk. Chapeau +1</head>
+			<neck>Fylgja Torque +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Dls. Tabard +1</body>
+			<hands>Duelist's gloves</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+		<set name="Haste"> <!-- Maximum Recast Reduction -->
+			<main>Chatoyant Staff</main>
+			<sub>Raptor strap +1</sub>
+			<ammo>Phtm. Tathlum</ammo>
+			<head>Wlk. Chapeau +1</head>
+			<neck>Fylgja Torque +1</neck>
+			<lear>Loquac. Earring</lear>
+			<rear>Astral Earring</rear>
+			<body>Dls. Tabard +1</body>
+			<hands>Duelist's gloves</hands>
+			<lring>Aqua Ring</lring>
+			<rring>Aqua Ring</rring>
+			<back>Prism Cape</back>
+			<waist>Penitent's Rope</waist>
+			<legs>Mahatma Slops</legs>
+			<feet>Duelist's Boots</feet>
+		</set>
+	</sets>
+	
+	<variables>
+		<var name="init">0</var><!--dont touch-->	
+	</variables>
+
+	<jobability>
+		<if ad_name="Chainspell"><equip></equip></if>
+		<if ad_name="Composure"><registerbuff id="419" /></if>
+	</jobability>
+	
+	<idlegear>
+		<if p_status="resting">
+			<equip set="Resting" />
+		</if>
+		<else>
+			<equip set="Stand" />
+		</else>
+		<if advanced="$init=0">
+			<setvar name="init" value="1" />
+			<command>/exec macrobook1.txt</command>
+		</if>
+	</idlegear>
+	
+	<midmagic>
+		<if ad_name="Stun">
+			<equip set="Stun" />
+			<return />
+		</if>
+		
+		<if ad_name="Stoneskin">
+			<equip set="Stoneskin" />
+		</if>
+		<elseif ad_name="Cure*|Curaga*">
+			<equip set="Cure" />
+		</elseif>
+		<elseif ad_skill="Ninjutsu"><equip set="Haste" /></elseif>
+		<elseif ad_skill="DarkMagic"><equip set="Dark" /></elseif>
+		<elseif ad_skill="ElementalMagic">
+			<if ad_name="Burn|Choke|Shock|Rasp|Drown|Choke"><equip set="EleDot" /></if>
+			<elseif ad_name="Fire*|Blizzard*|Aero*|Stone*|Thunder*|Water*">
+			<equip set="Nuke" /></elseif>
+		</elseif>
+		
+		<elseif ad_skill="EnfeeblingMagic">
+			<if ad_name="Dia*|Slow*|Paralyze*|Blind*|Poison*|Gravity|Sleep*|Silence|Bind">
+				<equip set="Enfeeb-MND" />
+			</if>
+		</elseif>
+		<elseif ad_skill="EnhancingMagic">
+			<if ad_name="Embrava|En*|Bar*|Phalanx"><equip set="Enhancing" /></if>
+			<else><equip set="Haste" /></else>
+		</elseif>
+	</midmagic>
+</ashitacast>
